@@ -119,14 +119,14 @@ document.getElementById('say-it-form').addEventListener('submit', function(e) {
     
     const finalBody = `From: ${name} (${country})%0D%0A%0D%0A"${bodyText}"`;
     
-    window.location.href = `mailto:your-email@gmail.com?subject=${encodeURIComponent(subject)}&body=${finalBody}`;
+    window.location.href = `mailto:owlcreations.maduka@gmail.com?subject=${encodeURIComponent(subject)}&body=${finalBody}`;
 });
 
 // --- 5. Contact Form Logic ---
 window.handleContact = function(e) {
     e.preventDefault();
     const msg = document.getElementById('contact-msg').value;
-    window.location.href = `mailto:your-email@gmail.com?subject=Wire Contact&body=${encodeURIComponent(msg)}`;
+    window.location.href = `mailto:owlcreations.maduka@gmail.com?subject=Wire Contact&body=${encodeURIComponent(msg)}`;
 };
 
 // --- 6. Sparkle Effect ---
