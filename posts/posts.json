@@ -1,0 +1,20 @@
+[
+    {
+        "id": "wall-01",
+        "title": "Sun at the Edge",
+        "excerpt": "A reflection on evening lights and digital silence.",
+        "date": "2023-10-27",
+        "file": "posts/wall-01.html",
+        "lang": "en",
+        "tags": ["sun", "reflection"]
+    },
+    {
+        "id": "pawaura-01",
+        "title": "සිහින දූපත (Dream Island)",
+        "excerpt": "සිංහල කවියක් ගැන කෙටි සටහනක්...",
+        "date": "2023-10-28",
+        "file": "posts/pawaura-01.html",
+        "lang": "si",
+        "tags": ["poem", "sinhala"]
+    }
+]
