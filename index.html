@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">YOUR NAME</div>
+        <ul class="nav-links">
+            <li><a href="#screen=gateway" class="nav-btn active" data-target="gateway">Gateway</a></li>
+            <li><a href="#screen=person" class="nav-btn" data-target="person">Person</a></li>
+            <li><a href="#screen=wall" class="nav-btn" data-target="wall">Wall (Eng)</a></li>
+            <li><a href="#screen=pawaura" class="nav-btn" data-target="pawaura">පවුර (Sin)</a></li>
+            <li><a href="#screen=frame" class="nav-btn" data-target="frame">Frame</a></li>
+            <li><a href="#screen=rack" class="nav-btn" data-target="rack">Rack</a></li>
+            <li><a href="#screen=wire" class="nav-btn" data-target="wire">Wire</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-container">
+
+        <section id="gateway" class="screen active">
+            <div class="hero">
+                <h1>Welcome to the Quiet Space.</h1>
+                <p>A digital archive of thoughts, frames, and signals.</p>
+            </div>
+        </section>
+
+        <section id="person" class="screen">
+            <h2>The Person</h2>
+            <p>Write your bio here. Keep it calm and simple.</p>
+            <div class="socials">
+                <a href="#">Twitter/X</a>
+                <a href="#">Instagram</a>
+            </div>
+        </section>
+
+        <section id="wall" class="screen">
+            <h2>The Wall</h2>
+            <div class="post-grid" id="wall-grid">
+                </div>
+        </section>
+
+        <section id="pawaura" class="screen">
+            <h2>පවුර</h2>
+            <div class="post-grid" id="pawaura-grid">
+                </div>
+        </section>
+
+        <section id="frame" class="screen">
+            <h2>Frame</h2>
+            <div class="gallery-grid">
+                <img src="images/placeholder.jpg" alt="Gallery Image 1">
+                <img src="images/placeholder.jpg" alt="Gallery Image 2">
+            </div>
+        </section>
+
+        <section id="rack" class="screen">
+            <h2> The Rack</h2>
+            <p>Books and curated items coming soon.</p>
+            <div class="rack-grid">
+                <div class="book-item">Book Title Placeholder</div>
+            </div>
+        </section>
+
+        <section id="wire" class="screen">
+            <h2>The Wire</h2>
+            <form id="contact-form" onsubmit="handleContact(event)">
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <textarea id="contact-msg" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Signal</button>
+            </form>
+        </section>
+
+    </main>
+
+    <div id="reader-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            
+            <div class="reader-controls">
+                <button id="toggle-read-mode">Aa (Read Mode)</button>
+                <button id="share-btn">Share</button>
+            </div>
+
+            <div id="reader-body">
+                </div>
+
+            <div class="say-it-section">
+                <h3>Leave a Signal</h3>
+                <form id="say-it-form">
+                    <input type="text" id="comment-name" placeholder="Name" required>
+                    <input type="text" id="comment-country" placeholder="Country" required>
+                    <input type="email" id="comment-email" placeholder="Email" required>
+                    <textarea id="comment-text" placeholder="Your thoughts..." required></textarea>
+                    <button type="submit">Send via Mail</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="sparkle-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
